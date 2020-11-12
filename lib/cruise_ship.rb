@@ -7,5 +7,9 @@
 # }
 
 def select_winner(passengers)
-  # add the code snippet here!
+  passengers.each do |key, value|
+    if value[0,1] == "A"
+      return value
+    end 
+  end
 end
